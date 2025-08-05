@@ -1,10 +1,82 @@
 <html>
-  <head>  
-    <title>My Simple Homepage</title>
+  <head>
+    <title>Lost Ark Inspired Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700,400&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #fff;
+        font-family: 'Roboto', Arial, sans-serif;
+        background-image: url('https://images.alphacoders.com/112/1123212.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+      .overlay {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(20, 20, 40, 0.7);
+        z-index: 1;
+      }
+      .container {
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 60px 30px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3em;
+        letter-spacing: 2px;
+        margin-bottom: 0.2em;
+        text-shadow: 0 4px 16px #000, 0 1px 0 #fff2;
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+      h2 {
+        font-size: 1.5em;
+        color: #ffd700;
+        margin-bottom: 1em;
+        text-shadow: 0 2px 8px #000;
+      }
+      p {
+        font-size: 1.2em;
+        background: rgba(30,30,50,0.7);
+        padding: 1em 2em;
+        border-radius: 10px;
+        display: inline-block;
+        box-shadow: 0 2px 8px #0008;
+      }
+      .btn {
+        margin-top: 2em;
+        padding: 0.8em 2em;
+        font-size: 1.1em;
+        color: #fff;
+        background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 2px 8px #0008;
+        transition: background 0.2s;
+      }
+      .btn:hover {
+        background: linear-gradient(90deg, #ffd700 0%, #ffb347 100%);
+      }
+    </style>
   </head>
-  <body> 
-    <h1>Title of My Simple Homepages</h1>
-    <h2>Subtitle</h2>
-    <p>Paragraph.</p>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <h1>Lost Ark Adventure</h1>
+      <h2>Embark on an Epic Journey</h2>
+      <p>Welcome to your Lost Ark-inspired homepage. Explore mysterious lands, battle fierce foes, and uncover ancient secrets. Your adventure begins here!</p>
+      <br>
+      <button class="btn">Start Your Quest</button>
+    </div>
   </body>
 </html>
